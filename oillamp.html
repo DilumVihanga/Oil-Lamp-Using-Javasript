@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>SCSE 2022</title>
+<link rel="icon" href="img/scse_logo.png">
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript">       	
+		var count=0;	
+		
+		function light(person) {
+			count++;
+			i1.src = "img/"+count+".gif"; 		
+		}
+		
+		function counterReset(){
+			count=vc=dean=chairman=keynote=hod=chair=tpchair=0;
+			i1.src = "img/0.gif";
+			document.getElementById("vc").disabled=false;
+			document.getElementById("dean").disabled=false;
+			document.getElementById("chairman").disabled=false;
+			document.getElementById("keynote").disabled=false;
+            document.getElementById("keynote2").disabled=false;
+			document.getElementById("hod").disabled=false;
+			document.getElementById("chair").disabled=false;			
+		}
+        
+    </script>
+    <style>
+        body {
+            padding-top: 0px;
+            min-height: 100%;
+            background-image: url('img/back2.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        
+    
+        .switch_1{
+            display: flex;
+            justify-content: center;
+            margin-top: 3vh;
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+        .switch_2{
+            display: flex;
+            justify-content: center;
+            margin-left: 2%;
+            margin-right: 2%;
+            
+        }
+        .switch_3{
+            display: flex;
+            justify-content:end;
+            color:#000000d8;
+            background: #00000000;
+            padding: 20px;
+               
+            
+            
+        }
+
+        .myButton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 0px 6px 1px #eeebeb;
+            background: rgb(216, 91, 91);
+            background-color: #EA6D23;
+            border-radius: 15px;
+            border: 1px solid #d6bcd6;
+            cursor: pointer;
+            color: #FFFFFF;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 15px;
+            font-style: italic;
+            font-weight: 100;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #e1e2ed;
+            margin: 5px;
+            width: 200px;
+            height: 30px;
+            padding-left: 0px;
+            padding-right: 20px;
+        }
+        
+        .myButton:hover {
+            background: linear-gradient(to bottom, #F2F2F2 10%, #F8F394 90%);
+            background-color: #bab1ba;
+			color: #000000;
+        }
+        
+        .myButton:active {
+            background: linear-gradient(to bottom, #FAF790 5%, #f4e9ecde 100%);
+            background-color: #0f0e0ef7;
+            color: #000000;
+            position: relative;
+            top: 1px;
+        }
+
+        .myButton:disabled,
+         button[disabled]{
+            background: linear-gradient(to bottom, #FAF790 5%, #f4e9ecde 100%);
+            background-color: #0f0e0ef7;
+            color: #000000;
+            position: relative;
+            top: 1px;
+        }
+        .logo{
+         position:relative; 
+         display:flex;
+        justify-content:center;
+        align-items:center;
+                }
+
+    </style>
+ 
+</head>
+
+<body>
+
+    <div class="logo">
+        <img src="img/logo with white back.png" style="width: 620px; position: absolute; top: -10px;">
+    </div> 
+    
+      
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_nup2ihtz.json" style="position:absolute; left:0px; width:200px; transform: rotate(180deg); height: 200px; " background="transparent" speed="1" class="anime"   loop autoplay></lottie-player>
+        
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_nup2ihtz.json" style="position:absolute; right:0px; width:200px;  height: 200px; transform: scaleX(-1); transform: scaleY(-1);" background="transparent" speed="1" class="anime"   loop autoplay></lottie-player>
+        
+        <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_coq62jw5.json" style="position:absolute; top:270px; left:140px; width:350px; transform: rotate(180deg); height: 200px; " background="transparent" speed="0.3" class="anime"   loop autoplay></lottie-player>
+
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_coq62jw5.json" style="position:absolute; top:270px; right:140px; width:350px; transform: rotate(180deg); height: 200px; " background="transparent" speed="0.3" class="anime"   loop autoplay></lottie-player> -->
+
+
+
+    <center>
+
+        <img id="i1" src="img/0.gif" / style="height:600px;width: 930px; padding-top: 7em; padding-bottom:0px;"><br>
+
+        <!-- <input type="button" id="vc" class="myButton" value="Vice Chancellor" onclick="light('vc');disabled=true" />
+        <input type="button" id="dean" class="myButton" value="Dean - FoS" onclick="light('dean');disabled=true" />
+        <input type="button" id="chairman" class="myButton" value="Chairman - Research Council" onclick="light('chairman');disabled=true" />
+		<input type="button" id="keynote" class="myButton" value="Keynote Speaker" onclick="light('keynote');disabled=true" />
+        <input type="button" id="hod" class="myButton" value="Head of Department" onclick="light('hod');disabled=true" />
+        <input type="button" id="chair" class="myButton" value="Conference Chair" onclick="light('chair');disabled=true" />
+		<input type="button" id="tpchair" class="myButton" value="Technical Programme Chair" onclick="light('tpchair');disabled=true" />
+		<br/><br/>
+        <input type="button" class="myButton" value="RESET" onclick="counterReset()" />  -->
+        <div class="allbuttons">
+        <div class="switch_1">
+            <button id="vc" class="myButton" value="Vice Chancellor" onclick="light('vc');disabled=true" style="width:400px; height: 35px; background-color: #e86e16;">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_o1nubm01.json"  style="width: 50px;" background="transparent"  speed="2"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+                Vice Chanceller
+            </button>
+            <button id="dean" class="myButton" value="Dean - FoS" onclick="light('dean');disabled=true" style="width:400px; height: 35px; background-color: #e86e16;">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_o1nubm01.json"  style="width: 50px;" background="transparent"  speed="2"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+                Dean - FoS
+            </button>
+            <button id="chairman" class="myButton" value="Chairman - Research Council" onclick="light('chairman');disabled=true" style="width:400px; height: 35px; background-color: #e86e16;">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_o1nubm01.json"  style="width: 50px;" background="transparent"  speed="2"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+                Chairman - Research Council
+            </button>
+            <button id="keynote" class="myButton" value="Keynote Speaker" onclick="light('keynote');disabled=true" style="width:400px; height: 35px; background-color: #e86e16;">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_o1nubm01.json"  style="width: 50px;" background="transparent"  speed="2"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+                Keynote Speaker 1
+            </button>
+            <button id="keynote2" class="myButton" value="Keynote Speaker2" onclick="light('keynote2');disabled=true" style="width:400px; height: 35px; background-color: #e86e16;">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_o1nubm01.json"  style="width: 50px;" background="transparent"  speed="2"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+                Keynote Speaker 2
+            </button>
+              
+        </div>
+        <div class="switch_2">
+            <button id="hod" class="myButton" value="Head of Department" onclick="light('hod');disabled=true" style="width:300px; height: 35px; background-color: #e86e16;">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_o1nubm01.json"  style="width: 50px;" background="transparent"  speed="2"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+                Head of Department
+            </button> 
+            <button id="chair" class="myButton" value="Conference Chair" onclick="light('chair');disabled=true" style="width:300px; height: 35px; background-color: #e86e16;">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_o1nubm01.json"  style="width: 50px;" background="transparent"  speed="2"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+                Conference Chair
+            </button>
+            
+        </div>
+        <div class="switch_3">
+            <input type="button" class="switch_3" value="RESET" style="border: 2px solid #000000;" onclick="counterReset()" />
+        </div>
+        </div>
+
+    </center>
+</body>
+
+</html>
